@@ -47,6 +47,8 @@ export const LoginPage: React.FC = () => {
 
       if (profile?.role === 'customer') {
         navigate('/customer/dashboard')
+      } else if (profile?.role === 'staff') {
+        navigate('/admin/customers')
       } else {
         navigate('/admin/dashboard')
       }
@@ -126,6 +128,10 @@ export const LoginPage: React.FC = () => {
             <Link to="/signup" className="text-foreground underline">
               Create Staff Account
             </Link>
+          </p>
+
+          <p className="text-[10px] text-muted-foreground/60 font-medium tracking-wider text-center pt-3 border-t border-border/40">
+            Powered by Inspiresights solutions
           </p>
         </div>
       </GlassCard>

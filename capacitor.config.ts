@@ -21,7 +21,7 @@ const config: CapacitorConfig = {
   appName: 'DigiGold',
   webDir: 'dist',
   server: {
-    url: 'https://y-rho-eosin.vercel.app',
+    url: 'https://digi-gold-react.vercel.app',
     cleartext: true,
     allowMixedContent: true,
   },
@@ -30,5 +30,6 @@ const config: CapacitorConfig = {
     webContentsDebuggingEnabled: true,
   },
 };
+
 
 export default config;
